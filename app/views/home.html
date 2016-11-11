@@ -28,7 +28,18 @@
       <h3 align=center>This Month's Promotions</h3>
     </div>
     <div class="col-xs-12 col-sm-9">
-      <h4>Implement the Promotion Here</h4>
+      <div class="media">
+        <div class="media-body">
+          <h2 class="media-heading">Weekend Grand Buffet
+                          <span class="label label-danger">New</span> <span class="badge">$19.99</span></h2>
+          <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person</p>
+        </div>
+        <div class="media-right media-middle">
+          <a href="#">
+            <img class="media-object img-thumbnail" src="images/buffet.png" alt="grandbuffet">
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -38,7 +49,17 @@
       <h3 align=center>Meet our Culinary Specialists</h3>
     </div>
     <div class="col-xs-12 col-sm-9 col-sm-pull-3">
-      <h4>Implement the Executive Chef Info Here</h4>
+      <div class="media">
+        <div class="media-left media-middle">
+          <a href="#">
+            <img class="media-object img-thumbnail" ng-src="{{chef.image}}" alt="Uthappizza">
+          </a>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">{{chef.name}} <small>{{chef.designation}}</small></h4>
+          <p>{{chef.description}}</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>

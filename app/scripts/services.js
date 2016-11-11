@@ -176,7 +176,11 @@ angular.module('confusionApp')
   };
   
   this.getFeatured = function() {
-    return getDish(0);
+    return this.getDish(0);
+  };
+  
+  this.getPromotion = function() {
+    return this.getDish(2);
   };
 })
 
@@ -230,6 +234,10 @@ angular.module('confusionApp')
   corpfac.getLeader = function (index) {
     return leadership[index];
   };
+  
+  corpfac.getFeaturedChef = function () {
+    return corpfac.getLeader(2);
+  }
   
   return corpfac;
 

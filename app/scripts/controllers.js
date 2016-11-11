@@ -118,7 +118,16 @@ angular.module('confusionApp')
         }])
 
 // implement the IndexController and About Controller here
-.controller('IndexController', ['$scope', function ($scope) {
+.controller('IndexController', ['$scope', '$stateParams', 'menuFactory', 'corporateFactory', function ($scope, $stateParams, menuFactory, corporateFactory) {
+  
+  var chef = corporateFactory.getFeaturedChef();
+  $scope.chef = chef;
+
+  var dish = menuFactory.getFeatured()
+  $scope.dish = dish;
+  
+  var promotion = menuFactory.getPromotion()
+  $scope.promotion = promotion;  
   
 }])
 
