@@ -174,6 +174,10 @@ angular.module('confusionApp')
   this.getDish = function (index) {
     return dishes[index];
   };
+  
+  this.getFeatured = function() {
+    return getDish(0);
+  };
 })
 
 .factory('corporateFactory', function () {
