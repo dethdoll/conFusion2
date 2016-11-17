@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('confusionApp', ['ui.router'])
+angular.module('confusionApp', ['ui.router','ngResource'])
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
 
@@ -68,3 +68,5 @@ angular.module('confusionApp', ['ui.router'])
 
     $urlRouterProvider.otherwise('/');
   });
+Contact GitHub API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Privacy Security Status Help
